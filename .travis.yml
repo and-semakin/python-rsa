@@ -14,9 +14,8 @@ matrix:
     - python: 3.5
       dist: xenial  # Bionic has no Python 3.5
 
-    # Disabled, see https://github.com/sybrenstuvel/python-rsa/issues/131
-    #- python: pypy3.5
-    #  dist: xenial  # Bionic has no Python 3.5
+    - python: pypy3.5
+      dist: xenial  # Bionic has no Python 3.5
 
 install:
   - pip install poetry
